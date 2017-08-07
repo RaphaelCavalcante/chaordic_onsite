@@ -10,27 +10,44 @@
 <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-	<div class="wrapper" >
-		<div id="refProduct" class="aside-1">
-			<div id ="ref.item_img"></div>
-			<div class="text" id ="ref.item_name"></div>
-			<div id="ref.price_content">
-				<span>por</span>
-				<div id ="ref.item_price"></div>
-				<div id="ref.item_payment_conditions"></div>
-				<span>sem juros</span>
+	<div class="decor">
+		<div id="header" class="wrapper header">
+			<div class="col">
+				<span class="header"> voce visitou: </span>
+			</div>
+			<div class="col">
+				<span class="header"> e talvez se interesse por: </span>
 			</div>
 		</div>
-		<div id="recomend_product">
-			<button onclick="prev()"> prev </button>
-			<ul id="recomendation_list" class="carousel">
-				<div id="itens" class="item_list">
+	</div>
+	<div class="wrapper" >
+		<div id="refProduct" class="col">
+			<div id ="ref.item_img"></div>
+			<div class="name" id ="ref.item_name"></div>
+			<div id="ref.oldprice" class="price">
+				<span> De: <span>
+			</div>
+			<div id="ref.price_content" class="price promo">
+				<span>por</span>
+				<div id ="ref.item_price"></div>
+				<div id="ref.item_payment_conditions" class="price promo">
 				</div>
-			</ul>
-			<button onclick="next()"> next </button>
+			</div>
+		</div>
+		<div class="wrapper recommendation">
+			<div class="col">
+				<button id="prev_item" onclick="prev()" class="btn left"></button>
+			</div>
+			<div id="recomend_product" class="col">
+				<ul id="recomendation_list" class="carousel">
+					<div id="itens" class="item_list">
+					</div>
+				</ul>
+			</div>
+			<div class="col">
+				<button id="next_item" onclick="next()" class="btn right"></button>
+			</div>
 		</div>
 	</div>
-<script>
-</script>
 </body>
 </html>

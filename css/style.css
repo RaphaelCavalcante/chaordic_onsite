@@ -1,19 +1,63 @@
+button:after { content:""; display: block;}
 body{
-    margin: 40px;
+    margin: 20px;
+    margin-top: 40px;
+}
+ul li a{
+    display:block;
 }
 .wrapper{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;  
-    text-align: center;
 }
+.wrapper .col{
+    flex: 1;
+}
+.decor{
+
+ background: -webkit-linear-gradient(lightblue, lightskyblue);
+ background: -moz-linear-gradient(lightblue, lightskyblue);
+ background: -o-linear-gradient(lightblue, lightskyblue);
+ background: linear-gradient(lightblue, lightskyblue);
+}
+.wrapper.header{
+    width: 35%;
+    font-size:18px;
+    -webkit-text-fill-color:blue;
+    font-weight: bold;
+}
+.wrapper.header.text{
+    width: 40%;
+}
+.recommendation{
+    border-left: 1px solid silver;
+    height: 50%;
+}
+.btn{
+    padding-top: 200%;
+    height: 100%;
+    background:transparent;
+}
+.btn:focus{
+    outline: none;
+}
+.btn.left:after{
+    border-style: solid;
+    outline: none;
+    border-width: 16px 27.7px 16px 0;
+    border-color: transparent #007bff transparent transparent;
+}
+.btn.right:after{
+    border-style: solid;
+    outline: none;
+    border-width: 16px 0 16px 27.7px;
+    border-color: transparent transparent transparent #007bff;
+
+}
+
 .carousel{
     padding: 0;
     margin: 0;
     list-style: none;
-    border: 1px solid silver;
     -ms-box-orient: horizontal;
     position: relative;
     display: -webkit-box;
@@ -25,23 +69,46 @@ body{
     overflow: hidden;
     transform: translateX();
     flex-wrap: nowrap;
+    
 }
 .item_list{
     list-style: none;
     display: -webkit-flex;
+    padding-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
     flex-wrap: nowrap;
+    transition:400ms ease;
 }
 .box{
   display: inline-block;
+  padding-left: 20px;
+  padding-top:10px;
 }
-.text{
+.box.hover:hover{
+    background: cyan;
+    width: auto;
+    cursor: pointer;
+    cursor: hand;
+}
+.name{
     overflow:hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     line-height: 16px;
-    max-height: 32px;
-    width:250px;
+    height: 45px;
+    width:150px;
     margin: 0 0 1em 0;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    text-align: center;
+}
+
+.price{
+    font-size:10px;
+}
+.price.promo{
+    font-size:14px;
+    color: red;
 }
