@@ -1,0 +1,13 @@
+<script id="product" type="text/template">
+    <div id="{{productId}}" class="box hover" onclick="location.assign( '{{productDetail}}' )">
+        <img src={{productImage}}></img>
+        <span class="name"> {{productName}} </span>
+        <span> De: <span>
+        <span class="price">{{productOldPrice}}</span><br>
+        <span class="price promo"> por: </span>
+        <strong class="price promo">{{productPrice}}</strong>
+        <div>
+            <span class="price promo"> {{productPriceConditions}}</span>
+        </div>
+    </div>
+</script>
