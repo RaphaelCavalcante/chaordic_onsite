@@ -1,13 +1,14 @@
-<html >
+<html>
 <head>
-<title>
-	Chaordic OnSite
-</title>
-<meta charset="UTF-8">
-<script src='js/home.js'></script>
-<script src='js/carrousel.js'></script>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css"/>
+	<title>
+		Chaordic OnSite
+	</title>
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="import" id="refProduct" href="templates/product.html"/>
+	<link rel="import" id="recProduct" href="templates/recomendation.html"/>
 </head>
 <body>
 	<div class="decor">
@@ -22,17 +23,7 @@
 	</div>
 	<div class="wrapper" >
 		<div id="refProduct" class="col">
-			<div id ="ref.item_img"></div>
-			<div class="name" id ="ref.item_name"></div>
-			<div id="ref.oldprice" class="price">
-				<span> De: <span>
-			</div>
-			<div id="ref.price_content" class="price promo">
-				<span>por</span>
-				<div id ="ref.item_price"></div>
-				<div id="ref.item_payment_conditions" class="price promo">
-				</div>
-			</div>
+			<div id="referenceProduct" class="box" ></div>
 		</div>
 		<div class="wrapper recommendation">
 			<div class="col">
@@ -49,5 +40,7 @@
 			</div>
 		</div>
 	</div>
+	<script src='js/template.js'></script>
+	<script src='js/home.js'></script>
 </body>
 </html>
